@@ -5,9 +5,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"log"
 	"net/http"
+	"os"
 )
 
-var APIkey = "my api key!!! cannot commit with it"
+var APIkey = os.Getenv("gpt_key")
 var client = CreateClient(APIkey, "https://api.openai.com/v1/completions")
 
 func main() {
