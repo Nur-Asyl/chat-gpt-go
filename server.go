@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-var APIkey = "sk-proj-UchxBLJyVrfedWH7JJFlT3BlbkFJ2yasZndADMp5uxSS3ji0"
+var APIkey = "my api key!!! cannot commit with it"
 var client = CreateClient(APIkey, "https://api.openai.com/v1/completions")
 
 func main() {
